@@ -28,7 +28,7 @@ const ProductInfo = ({ name, brand, numReviews, stars, flavour }) => {
         <h3 className='text-xl font-semibold mb-3'>
           Select Strength, Flavour or Colour:
         </h3>
-        <span className='font-semibold border-2 border-[#00594c] bg-[#e6f3f2] p-2 rounded-lg text-sm cursor-pointer text-[#00594c]'>
+        <span className='font-semibold border-2 border-[#00594c] bg-[#e6f3f2] hover:bg-[#bfe0dc] p-2 rounded-lg text-sm cursor-pointer text-[#00594c]'>
           {flavour}
         </span>
       </div>
