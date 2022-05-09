@@ -1,7 +1,7 @@
 import HeaderLogo from './HeaderLogo';
 import NavBar from './NavBar';
 import SearchBox from './SearchBox';
-import Categories from './Categories';
+import NavCategories from './NavCategories';
 
 const Header = () => {
   return (
@@ -12,15 +12,15 @@ const Header = () => {
           <SearchBox />
           <NavBar />
         </div>
-        <Categories />
+        <NavCategories />
       </div>
-      <div className='h-12 bg-hbred flex items-center justify-between hover:bg-hblightred'>
-        <div className='w-10/12 flex items-center justify-center'>
-          <p className='font-semibold text-lg pl-64'>
+      <div className='md:h-12 bg-hbred flex flex-col md:flex-row items-center justify-between hover:bg-hblightred h-20'>
+        <div className='w-10/12 flex flex-col md:flex-row items-center justify-center'>
+          <p className='font-semibold text-sm md:text-lg pt-2 md:pt-0 md:pl-64'>
             Buy 1 get 1 half price | On 100s of your favourites {'>'}
           </p>
         </div>
-        <div className='flex items-center justify-end'>
+        <div className='flex items-center justify-end mb-4 md:mb-0'>
           <p className='text-xs pr-4'>T&Cs apply.</p>
         </div>
       </div>

@@ -3,7 +3,7 @@ import { categories, filterBy } from '../utils';
 
 const Sidebar = () => {
   return (
-    <div className='col-span-1'>
+    <div className='hidden md:block col-span-1'>
       <div className='border mb-3'>
         <div className='border-b'>
           <p className='font-semibold p-4'>Select Category:</p>
