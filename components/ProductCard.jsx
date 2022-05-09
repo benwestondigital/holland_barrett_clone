@@ -4,10 +4,11 @@ import { displayPrice, pricePer100g } from '../utils';
 import { StarIcon } from '@heroicons/react/solid';
 
 const ProductCard = ({ data }) => {
+  const productLink = data.name.replace(' ', '');
   const fiveStars = [...Array(5)].map(x => 0);
 
   return (
-    <Link href={`products/${data.name}`}>
+    <Link href={`products/${productLink}`}>
       <div className='border flex flex-col cursor-pointer'>
         <div data-test='product-image'>
           <Image alt={data.name} src={data.image} width={302} height={302} />
