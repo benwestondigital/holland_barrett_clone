@@ -15,6 +15,12 @@ const Purchase = () => {
     e.preventDefault();
     setQuantity(currQuantity => currQuantity + 1);
   };
+
+  const addToBasket = e => {
+    e.preventDefault();
+    /* TODO: complete add to basket function - context */
+  };
+
   return (
     <form className='grid grid-rows-2 lg:grid-cols-2 lg:grid-rows-1 p-2 mt-1 md:gap-2 lg:gap-6'>
       {/* Purchase */}
@@ -33,34 +39,38 @@ const Purchase = () => {
             One-time purchase
           </label>
         </div>
-        <div className='m-2 grid grid-cols-2 gap-x-1'>
+        <div className='m-2 grid grid-cols-2 gap-x-1 pt-2'>
           <label
             htmlFor='quantity'
             className='text-xl font-semibold text-black'
           >
             Quantity:
           </label>
-          <div className='border rounded-lg w-11/12 flex items-center justify-between bg-white'>
-            <button className='text-lg h-8' onClick={e => decreaseQuantity(e)}>
+          <div className='border rounded-lg w-11/12 flex items-center justify-between bg-white px-2'>
+            <button className='text-lg h-8 text-hbgreen' onClick={e => decreaseQuantity(e)}>
               -
             </button>
             <input
               type='number'
               id='quantity'
-              className='w-14 h-8'
+              className='w-14 h-8 no-spin border-0 text-center'
               value={quantity}
               disabled={!quantity}
             />
             <button
-              className='text-lg h-8 pl-3'
+              className='text-lg h-8 text-hbgreen'
               onClick={e => increaseQuantity(e)}
             >
               +
             </button>
           </div>
         </div>
-        <div className='flex items-center grow justify-center mt-6'>
-          <button className='hover:shadow-lg text-xl font-semibold text-white rounded-lg w-11/12 bg-[#93c90e] hover:bg-[#6da500] py-3'>
+        <div className='flex items-center grow justify-center mt-8'>
+          <button
+            type='submit'
+            onClick={e => addToBasket(e)}
+            className='hover:shadow-lg text-xl font-semibold text-white rounded-lg w-11/12 bg-[#93c90e] hover:bg-[#6da500] py-4'
+          >
             Add to Basket
           </button>
         </div>
