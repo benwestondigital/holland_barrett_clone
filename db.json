@@ -1,0 +1,76 @@
+{
+  "products": [
+    {
+      "id": 0,
+      "name": "PE Nutrition Performance Whey Chocolate 900g",
+      "size": "900g",
+      "flavour": "Chocolate",
+      "brand": "PE Nutrition",
+      "price": "£18",
+      "image": "http://localhost:3000/images/PENutritionPerformance900g.webp"
+    },
+    {
+      "id": 1,
+      "name": "PhD Diet Whey Powder Belgian Chocolate 1000g",
+      "size": "1000g",
+      "flavour": "Chocolate",
+      "brand": "PhD",
+      "price": "£20",
+      "image": "http://localhost:3000/images/phddietwhey.webp"
+    },
+    {
+      "id": 2,
+      "name": "Optimum Nutrition Serious Mass Powder Strawberry 2.72kg",
+      "size": "2.72kg",
+      "flavour": "Strawberry",
+      "brand": "Optimum Nutrition",
+      "price": "£30",
+      "image": "http://localhost:3000/images/seriousmass.webp"
+    },
+    {
+      "id": 3,
+      "name": "Optimum Nutrition Gold Standard 100% Whey Powder Vanilla Ice Cream 450g",
+      "size": "450g",
+      "flavour": "Vanilla Ice Cream",
+      "brand": "Optimum Nutrition",
+      "price": "£16",
+      "image": "http://localhost:3000/images/goldstandardwhey.webp"
+    },
+    {
+      "id": 4,
+      "name": "Applied Nutrition Collagen Peptides 300g",
+      "size": "300g",
+      "flavour": "Unflavoured",
+      "brand": "Applied Nutrition",
+      "price": "£25",
+      "image": "http://localhost:3000/images/collagenpeptides.webp"
+    },
+    {
+      "id": 5,
+      "name": "PE Nutrition Simply Whey Strawberry 600g",
+      "size": "600g",
+      "flavour": "Strawberry",
+      "brand": "PE Nutrition",
+      "price": "£15",
+      "image": "http://localhost:3000/images/penutritionwhey.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Pulsin Soya Protein 250g Powder",
+      "size": "250g",
+      "flavour": "Soya",
+      "brand": "Pulsin",
+      "price": "£5.24",
+      "image": "http://localhost:3000/images/pulsinsoyaprotein.webp"
+    },
+    {
+      "id": 7,
+      "name": "Optimum Nutrition Lean Whey Sugar Free Strawberries & Cream 740g",
+      "size": "740g",
+      "flavour": "Strawberries & Cream",
+      "brand": "Optimum Nutrition",
+      "price": "£15",
+      "image": "http://localhost:3000/images/optimumnutritionleanwhey.webp"
+    }
+  ]
+}

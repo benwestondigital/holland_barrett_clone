@@ -1,8 +1,7 @@
 import Head from 'next/head';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
-const Home = () => {
+const Home = ({ products }) => {
+  console.log(products);
   return (
     <div>
       <Head>
@@ -14,9 +13,17 @@ const Home = () => {
       </Head>
       <div className='mx-auto'>
         {/* Products */}
+        <p>{products[0].name}</p>
       </div>
     </div>
   );
 };
 
 export default Home;
+
+export async function getStaticProps() {
+  const res = await fetch('http://localhost:3000/products');
+  const products = await res.json();
+
+  return { props: { products } };
+}
