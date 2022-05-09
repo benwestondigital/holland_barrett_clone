@@ -16,7 +16,7 @@ const ProductCard = ({ data }) => {
           <p className='text-hbgreen font-semibold text-sm'>{data.name}</p>
           <p>
             Star Rating Here{' '}
-            <span className='text-sm text-gray-400'>(No. Reviews)</span>
+            <span className='text-xs text-gray-400'>({data.numReviews})</span>
           </p>
           <p className='font-bold'>{displayPrice(data.price)}</p>
           <p className='text-sm text-gray-400'>
