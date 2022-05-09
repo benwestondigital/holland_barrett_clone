@@ -3,73 +3,73 @@
     {
       "id": 0,
       "name": "PE Nutrition Performance Whey Chocolate 900g",
-      "size": "900g",
+      "size": 900,
       "flavour": "Chocolate",
       "brand": "PE Nutrition",
-      "price": "£18",
+      "price": 1800,
       "image": "http://localhost:3000/images/PENutritionPerformance900g.webp"
     },
     {
       "id": 1,
       "name": "PhD Diet Whey Powder Belgian Chocolate 1000g",
-      "size": "1000g",
+      "size": 1000,
       "flavour": "Chocolate",
       "brand": "PhD",
-      "price": "£20",
+      "price": 2000,
       "image": "http://localhost:3000/images/phddietwhey.webp"
     },
     {
       "id": 2,
       "name": "Optimum Nutrition Serious Mass Powder Strawberry 2.72kg",
-      "size": "2.72kg",
+      "size": 2720,
       "flavour": "Strawberry",
       "brand": "Optimum Nutrition",
-      "price": "£30",
+      "price": 3000,
       "image": "http://localhost:3000/images/seriousmass.webp"
     },
     {
       "id": 3,
       "name": "Optimum Nutrition Gold Standard 100% Whey Powder Vanilla Ice Cream 450g",
-      "size": "450g",
+      "size": 450,
       "flavour": "Vanilla Ice Cream",
       "brand": "Optimum Nutrition",
-      "price": "£16",
+      "price": 1600,
       "image": "http://localhost:3000/images/goldstandardwhey.webp"
     },
     {
       "id": 4,
       "name": "Applied Nutrition Collagen Peptides 300g",
-      "size": "300g",
+      "size": 300,
       "flavour": "Unflavoured",
       "brand": "Applied Nutrition",
-      "price": "£25",
+      "price": 2500,
       "image": "http://localhost:3000/images/collagenpeptides.webp"
     },
     {
       "id": 5,
       "name": "PE Nutrition Simply Whey Strawberry 600g",
-      "size": "600g",
+      "size": 600,
       "flavour": "Strawberry",
       "brand": "PE Nutrition",
-      "price": "£15",
+      "price": 1500,
       "image": "http://localhost:3000/images/penutritionwhey.jpg"
     },
     {
       "id": 6,
       "name": "Pulsin Soya Protein 250g Powder",
-      "size": "250g",
+      "size": 250,
       "flavour": "Soya",
       "brand": "Pulsin",
-      "price": "£5.24",
+      "price": 524,
       "image": "http://localhost:3000/images/pulsinsoyaprotein.webp"
     },
     {
       "id": 7,
       "name": "Optimum Nutrition Lean Whey Sugar Free Strawberries & Cream 740g",
-      "size": "740g",
+      "size": 740,
       "flavour": "Strawberries & Cream",
       "brand": "Optimum Nutrition",
-      "price": "£15",
+      "price": 1500,
       "image": "http://localhost:3000/images/optimumnutritionleanwhey.webp"
     }
   ]
