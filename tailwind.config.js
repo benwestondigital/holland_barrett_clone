@@ -7,6 +7,15 @@ module.exports = {
     extend: {
       colors: { hbgreen: '#00594c' },
     },
+    container: {
+      center: true,
+      screens: {
+        '2xl': '1220px',
+      },
+    },
+    fontFamily: {
+      sans: ['Helvetica, sans-serif'],
+    },
   },
   plugins: [],
 };
