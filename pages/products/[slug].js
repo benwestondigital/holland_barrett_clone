@@ -10,7 +10,7 @@ const ProductPage = ({
   product: { name, image, flavour, brand, price, numReviews, stars, size },
 }) => {
   return (
-    <div className='text-[#333]'>
+    <div className='text-[#333] container'>
       <ProductBreadcrumbs name={name} />
       <div className='grid grid-cols-2 gap-2 m-8'>
         {/* Left Col - Image */}
