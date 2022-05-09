@@ -5,7 +5,7 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: { hbgreen: '#00594c' },
+      colors: { hbgreen: '#00594c', hbred: '#f7403a', hblightred: '#ffb7ae' },
     },
     container: {
       center: true,

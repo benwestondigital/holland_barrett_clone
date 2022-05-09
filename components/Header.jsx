@@ -14,7 +14,7 @@ const Header = () => {
         </div>
         <Categories />
       </div>
-      <div className='h-12 bg-[#f7403a] flex items-center justify-between hover:bg-[#ffb7ae]'>
+      <div className='h-12 bg-hbred flex items-center justify-between hover:bg-hblightred'>
         <div className='w-10/12 flex items-center justify-center'>
           <p className='font-semibold text-lg pl-64'>
             Buy 1 get 1 half price | On 100s of your favourites {'>'}
