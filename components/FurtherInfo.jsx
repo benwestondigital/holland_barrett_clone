@@ -20,7 +20,7 @@ const FurtherInfo = ({ stars, numReviews }) => {
             className='flex items-center justify-between p-4 border-b w-[97%] mx-auto cursor-pointer'
           >
             <div>
-              <p className='text-xl font-semibold '>{info}</p>
+              <p className='text-xl font-semibold mb-1'>{info}</p>
               {renderStars && (
                 <StarRating stars={stars} numReviews={numReviews} />
               )}
