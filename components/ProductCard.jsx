@@ -1,16 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-
-const displayPrice = price => {
-  if (price > 999) {
-    return `£${price / 100}.00`;
-  }
-  return `£${price / 100}`;
-};
-
-const pricePer100g = (price, size) => {
-  return `£${(price / size).toFixed(2)}/100g`;
-};
+import { displayPrice, pricePer100g } from '../utils';
 
 const ProductCard = ({ data }) => {
   return (
@@ -19,10 +9,10 @@ const ProductCard = ({ data }) => {
         <div data-test='product-image'>
           <Image alt={data.name} src={data.image} width={302} height={302} />
         </div>
-        <div className='flex flex-col justify-end'>
-          <div className='bg-hbred text-white text-sm font-semibold flex justify-center'>
-            <p>Great Savings</p>
-          </div>
+        <div className='bg-hbred text-white text-sm font-semibold flex justify-center'>
+          <p>Great Savings</p>
+        </div>
+        <div className='text-center'>
           <p className='text-hbgreen font-semibold text-sm'>{data.name}</p>
           <p>
             Star Rating Here{' '}
