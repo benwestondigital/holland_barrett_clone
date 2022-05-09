@@ -5,7 +5,7 @@ import NavCategories from './NavCategories';
 
 const Header = () => {
   return (
-    <div className='bg-hbgreen text-white'>
+    <div className='bg-hbgreen text-white pt-2'>
       <div className='container mx-auto'>
         <div className='flex items-center justify-between p-2 space-x-40'>
           <HeaderLogo />
