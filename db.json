@@ -7,7 +7,9 @@
       "flavour": "Chocolate",
       "brand": "PE Nutrition",
       "price": 1800,
-      "image": "http://localhost:3000/images/PENutritionPerformance900g.webp"
+      "image": "http://localhost:3000/images/PENutritionPerformance900g.webp",
+      "stars": 4.4,
+      "numReviews": 26
     },
     {
       "id": 1,
@@ -16,7 +18,9 @@
       "flavour": "Chocolate",
       "brand": "PhD",
       "price": 2000,
-      "image": "http://localhost:3000/images/phddietwhey.webp"
+      "image": "http://localhost:3000/images/phddietwhey.webp",
+      "stars": 4.3,
+      "numReviews": 300
     },
     {
       "id": 2,
@@ -25,7 +29,9 @@
       "flavour": "Strawberry",
       "brand": "Optimum Nutrition",
       "price": 3000,
-      "image": "http://localhost:3000/images/seriousmass.webp"
+      "image": "http://localhost:3000/images/seriousmass.webp",
+      "stars": 4.4,
+      "numReviews": 110
     },
     {
       "id": 3,
@@ -34,7 +40,9 @@
       "flavour": "Vanilla Ice Cream",
       "brand": "Optimum Nutrition",
       "price": 1600,
-      "image": "http://localhost:3000/images/goldstandardwhey.webp"
+      "image": "http://localhost:3000/images/goldstandardwhey.webp",
+      "stars": 4.7,
+      "numReviews": 358
     },
     {
       "id": 4,
@@ -43,7 +51,9 @@
       "flavour": "Unflavoured",
       "brand": "Applied Nutrition",
       "price": 2500,
-      "image": "http://localhost:3000/images/collagenpeptides.webp"
+      "image": "http://localhost:3000/images/collagenpeptides.webp",
+      "stars": 3.5,
+      "numReviews": 13
     },
     {
       "id": 5,
@@ -52,7 +62,9 @@
       "flavour": "Strawberry",
       "brand": "PE Nutrition",
       "price": 1500,
-      "image": "http://localhost:3000/images/penutritionwhey.jpg"
+      "image": "http://localhost:3000/images/penutritionwhey.jpg",
+      "stars": 4.4,
+      "numReviews": 26
     },
     {
       "id": 6,
@@ -61,7 +73,9 @@
       "flavour": "Soya",
       "brand": "Pulsin",
       "price": 524,
-      "image": "http://localhost:3000/images/pulsinsoyaprotein.webp"
+      "image": "http://localhost:3000/images/pulsinsoyaprotein.webp",
+      "stars": 4.0,
+      "numReviews": 46
     },
     {
       "id": 7,
@@ -70,7 +84,9 @@
       "flavour": "Strawberries & Cream",
       "brand": "Optimum Nutrition",
       "price": 1500,
-      "image": "http://localhost:3000/images/optimumnutritionleanwhey.webp"
+      "image": "http://localhost:3000/images/optimumnutritionleanwhey.webp",
+      "stars": 5,
+      "numReviews": 4
     }
   ]
 }
