@@ -63,7 +63,7 @@ const Footer = () => {
         </div>
       </div>
       {/* Legal Info Section */}
-      <div className='py-2 my-3 border-hbgreen w-11/12 mx-auto'>
+      <div className='py-2 my-3 border-hbgreen w-11/12 container'>
         <div className='border-y py-2 my-3 border-hbgreen'>
           <p className='text-center text-xs'>
             Copyright © Holland & Barrett Retail Limited, 2022. All rights
