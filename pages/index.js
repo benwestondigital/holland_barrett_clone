@@ -12,6 +12,14 @@ const Home = ({ products }) => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       {/* TODO: set up grid 4 x 2 */}
+      <div className='text-sm my-6 mx-24'>
+        <p>
+          <span className='text-hbgreen mr-4 hover:underline cursor-pointer'>Home</span> <span className='text-xl mr-2'>{'>'}</span> Protein Powder for £30 or Less
+        </p>
+      </div>
+      <div className='flex justify-center text-3xl font-semibold'>
+        <h1>Protein Powder for £30 or Less</h1>
+      </div>
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 mt-8'>
         {/* Products */}
         {products.map(prod => {
