@@ -5,7 +5,7 @@ import { displayPrice, pricePer100g } from '../utils';
 const ProductCard = ({ data }) => {
   return (
     <Link href={`products/${data.name}`}>
-      <div className='m-1 border flex flex-col cursor-pointer'>
+      <div className='border flex flex-col cursor-pointer'>
         <div data-test='product-image'>
           <Image alt={data.name} src={data.image} width={302} height={302} />
         </div>
