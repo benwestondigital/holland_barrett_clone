@@ -23,7 +23,7 @@ const Purchase = () => {
           <input
             type='radio'
             id='purchase'
-            className='h-7 w-7 mr-2 checked:text-[#00594c] focus:outline-none'
+            className='h-6 w-6 mr-2 checked:text-[#00594c] focus:outline-none'
             checked
           />
           <label
@@ -69,7 +69,7 @@ const Purchase = () => {
       {/* Subscribe */}
       <div className='rounded-lg border-2 grow p-2'>
         <div className='p-2 flex items-center justify-around'>
-          <input type='radio' id='purchase' className='h-7 w-7 mr-2' disabled />
+          <input type='radio' id='purchase' className='h-6 w-6 mr-2' disabled />
           <div className='flex items-center '>
             <RefreshIcon className='h-6 pr-2' />
             <label htmlFor='purchase' className='text-xl font-semibold'>
