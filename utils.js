@@ -9,6 +9,16 @@ export const pricePer100g = (price, size) => {
   return `£${(price / size).toFixed(2)}/100g`;
 };
 
+export const navCategories = [
+  'Vitamins & Supplements',
+  'Food & Drink',
+  'Sports Nutrition',
+  'Vegan',
+  'Natural Beauty',
+  'Weight Management',
+  'Offers',
+];
+
 export const categories = [
   'Food & Drink',
   'Informed Sport',
