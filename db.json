@@ -9,7 +9,8 @@
       "price": 1800,
       "image": "http://localhost:3000/images/PENutritionPerformance900g.webp",
       "stars": 4.4,
-      "numReviews": 26
+      "numReviews": 26,
+      "dealType": "Great Savings"
     },
     {
       "id": 1,
@@ -20,7 +21,8 @@
       "price": 2000,
       "image": "http://localhost:3000/images/phddietwhey.webp",
       "stars": 4.3,
-      "numReviews": 300
+      "numReviews": 300,
+      "dealType": "Great Savings"
     },
     {
       "id": 2,
@@ -31,7 +33,8 @@
       "price": 3000,
       "image": "http://localhost:3000/images/seriousmass.webp",
       "stars": 4.4,
-      "numReviews": 110
+      "numReviews": 110,
+      "dealType": "Great Savings"
     },
     {
       "id": 3,
@@ -42,7 +45,8 @@
       "price": 1600,
       "image": "http://localhost:3000/images/goldstandardwhey.webp",
       "stars": 4.7,
-      "numReviews": 358
+      "numReviews": 358,
+      "dealType": "Great Savings"
     },
     {
       "id": 4,
@@ -53,7 +57,8 @@
       "price": 2500,
       "image": "http://localhost:3000/images/collagenpeptides.webp",
       "stars": 3.5,
-      "numReviews": 13
+      "numReviews": 13,
+      "dealType": "Buy 1 Get 1 Half Price"
     },
     {
       "id": 5,
@@ -64,7 +69,8 @@
       "price": 1500,
       "image": "http://localhost:3000/images/penutritionwhey.jpg",
       "stars": 4.4,
-      "numReviews": 26
+      "numReviews": 26,
+      "dealType": "Great Value"
     },
     {
       "id": 6,
@@ -75,7 +81,8 @@
       "price": 524,
       "image": "http://localhost:3000/images/pulsinsoyaprotein.webp",
       "stars": 4.0,
-      "numReviews": 46
+      "numReviews": 46,
+      "dealType": "25% off"
     },
     {
       "id": 7,
@@ -86,7 +93,8 @@
       "price": 1500,
       "image": "http://localhost:3000/images/optimumnutritionleanwhey.webp",
       "stars": 5,
-      "numReviews": 4
+      "numReviews": 4,
+      "dealType": "Great Savings"
     }
   ]
 }
