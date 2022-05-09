@@ -10,7 +10,7 @@ const SearchBox = () => {
           autoComplete='off'
           data-test='search-input'
           maxLength={128}
-          className='p-2 rounded-l-md placeholder-hbgreen outline-none grow'
+          className='p-2 rounded-l-md placeholder-hbgreen outline-none border-0 grow'
         />
         {/* TODO: set up button useState to enable when typed */}
         <button type='submit' disabled className='bg-white p-2 rounded-r-md'>
