@@ -15,10 +15,10 @@ const Price = ({ price, size }) => {
           </p>
         </div>
         <div>
-          <p className='text-2xl font-bold' data-test='product-page-price'>
+          <p className='text-2xl font-bold' data-testid='product-page-price'>
             {displayPrice(price)}
           </p>
-          <p className='text-sm text-gray-400' data-test='product-page-100g'>
+          <p className='text-sm text-gray-400' data-testid='product-page-100g'>
             {pricePer100g(price, size)}
           </p>
         </div>

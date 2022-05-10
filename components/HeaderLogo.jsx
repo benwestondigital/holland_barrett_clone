@@ -3,7 +3,7 @@ import Link from 'next/link';
 const HeaderLogo = () => {
   return (
     <div>
-      <Link href='/' data-test='logo'>
+      <Link href='/' data-testid='logo'>
         {/* Large Logo */}
         <svg
           width='307'

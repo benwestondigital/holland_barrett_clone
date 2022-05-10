@@ -1,7 +1,7 @@
 import { customerService, aboutUs, trending, brands } from '../utils';
 const Footer = () => {
   return (
-    <div className='border-t-4 border-hbgreen' data-test='footer'>
+    <div className='border-t-4 border-hbgreen' data-testid='footer'>
       <div className='container hidden md:flex items-start justify-between px-12 mb-12 pt-8'>
         {/* Payment / Social Links Section */}
         {/* Site Links Section */}
@@ -65,7 +65,7 @@ const Footer = () => {
       {/* Legal Info Section */}
       <div
         className='py-2 my-3 border-hbgreen w-11/12 container'
-        data-test='legal-info'
+        data-testid='legal-info'
       >
         <div className='border-y py-2 my-3 border-hbgreen'>
           <p className='text-center text-xs'>

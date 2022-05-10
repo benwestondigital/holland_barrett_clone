@@ -4,7 +4,7 @@ const Collection = () => {
   return (
     <div
       className='bg-white p-4 flex flex-col justify-start items-start'
-      data-test='basket-collection'
+      data-testid='basket-collection'
     >
       <h3 className='font-semibold text-lg whitespace-nowrap'>
         Collection availability

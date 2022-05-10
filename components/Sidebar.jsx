@@ -3,8 +3,8 @@ import { categories, filterBy } from '../utils';
 
 const Sidebar = () => {
   return (
-    <div className='hidden md:block col-span-1' data-test='home-sidebar'>
-      <div className='border mb-3' data-test='home-categories'>
+    <div className='hidden md:block col-span-1' data-testid='home-sidebar'>
+      <div className='border mb-3' data-testid='home-categories'>
         <div className='border-b'>
           <p className='font-semibold p-4'>Select Category:</p>
         </div>
@@ -18,7 +18,7 @@ const Sidebar = () => {
           })}
         </ul>
       </div>
-      <div data-test='home-filters'>
+      <div data-testid='home-filters'>
         <div className='border'>
           <p className='font-semibold px-3 py-4'>Filter by:</p>
         </div>

@@ -25,11 +25,11 @@ const Basket = () => {
 
   if (basket.length < 1) return <EmptyBasket />;
   return (
-    <div className='bg-[#eeeeef] p-6' data-test='filled-basket'>
+    <div className='bg-[#eeeeef] p-6' data-testid='filled-basket'>
       <div className='p-2 container'>
         <h2 className='font-semibold text-3xl pt-12 pl-12'>Your basket</h2>
         <div className='grid grid-cols-4 gap-x-6 mt-6'>
-          <div className='col-span-3' data-test='basket'>
+          <div className='col-span-3' data-testid='basket'>
             <div className='bg-white'>
               {uniqueBasket.map((item, index) => {
                 const itemValue = item.price * item.quantity;
@@ -47,7 +47,7 @@ const Basket = () => {
                       <div className='w-1/2'>
                         <h3
                           className='text-[#00594c] font-semibold'
-                          data-test='product-name'
+                          data-testid='product-name'
                         >
                           {item.name}
                         </h3>
@@ -70,7 +70,7 @@ const Basket = () => {
                         </div>
                         <p
                           className='font-semibold text-xl'
-                          data-test='product-price'
+                          data-testid='product-price'
                         >
                           {displayPrice(itemValue)}
                         </p>
@@ -82,7 +82,7 @@ const Basket = () => {
             </div>
           </div>
           {/* Sidebar */}
-          <div className='col-span-1' data-test='basket-sidebar'>
+          <div className='col-span-1' data-testid='basket-sidebar'>
             <Collection />
             {/* Purchase Amount */}
             <BasketPurchase basket={basket} />

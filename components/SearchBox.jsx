@@ -5,13 +5,13 @@ const SearchBox = () => {
     <div className='hidden md:flex'>
       <form
         className='flex grow items-center text-hbgreen max-w-sm'
-        data-test='search-form'
+        data-testid='search-form'
       >
         <input
           type='search'
           placeholder='Search products, brands, articles'
           autoComplete='off'
-          data-test='search-input'
+          data-testid='search-input'
           maxLength={128}
           className='p-2 rounded-l-md placeholder-hbgreen outline-none border-0 grow'
         />

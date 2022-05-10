@@ -15,7 +15,7 @@ const Home = ({ products }) => {
       </Head>
 
       {/* Breadcrumbs */}
-      <div data-test='home-breadcrumbs'>
+      <div data-testid='home-breadcrumbs'>
         <div className='text-sm my-4 mx-12'>
           <p>
             <span className='text-hbgreen mr-4 hover:underline cursor-pointer'>
@@ -27,7 +27,7 @@ const Home = ({ products }) => {
         </div>
         <div
           className='flex justify-center text-4xl font-semibold'
-          data-test='home-title'
+          data-testid='home-title'
         >
           <h1>Protein Powder for £30 or Less</h1>
         </div>
@@ -36,7 +36,7 @@ const Home = ({ products }) => {
       {/* Content */}
       <div
         className='grid grid-cols-1 md:grid-cols-5 gap-2 m-8'
-        data-test='home-main-content'
+        data-testid='home-main-content'
       >
         <Sidebar />
         <Products products={products} />

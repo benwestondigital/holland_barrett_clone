@@ -8,7 +8,7 @@ const QuantityButton = ({ decreaseQuantity, increaseQuantity, quantity }) => {
         <button
           className='text-lg h-8 text-hbgreen'
           onClick={e => decreaseQuantity(e)}
-          data-test='decrease-button'
+          data-testid='decrease-button'
         >
           -
         </button>
@@ -22,7 +22,7 @@ const QuantityButton = ({ decreaseQuantity, increaseQuantity, quantity }) => {
         <button
           className='text-lg h-8 text-hbgreen'
           onClick={e => increaseQuantity(e)}
-          data-test='increase-button'
+          data-testid='increase-button'
         >
           +
         </button>

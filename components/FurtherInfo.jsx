@@ -25,7 +25,7 @@ const FurtherInfo = ({ stars, numReviews }) => {
                 <StarRating
                   stars={stars}
                   numReviews={numReviews}
-                  data-test='product-customer-stars'
+                  data-testid='product-customer-stars'
                 />
               )}
             </div>

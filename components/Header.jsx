@@ -5,7 +5,7 @@ import NavCategories from './NavCategories';
 
 const Header = () => {
   return (
-    <div className='bg-hbgreen text-white pt-2' data-test='header'>
+    <div className='bg-hbgreen text-white pt-2' data-testid='header'>
       <div className='container mx-auto'>
         <div className='flex items-center justify-between p-2 space-x-40'>
           <HeaderLogo />
@@ -18,7 +18,7 @@ const Header = () => {
         <div className='w-10/12 flex flex-col md:flex-row items-center justify-center'>
           <p
             className='font-semibold text-sm md:text-lg pt-2 md:pt-0 md:pl-64'
-            data-test='reduced-banner'
+            data-testid='reduced-banner'
           >
             Buy 1 get 1 half price | On 100s of your favourites {'>'}
           </p>

@@ -4,7 +4,7 @@ const NavCategories = () => {
   return (
     <div
       className='md:flex items-center justify-between mt-2 hidden'
-      data-test='nav-categories'
+      data-testid='nav-categories'
     >
       {navCategories.map(type => {
         return (

@@ -8,7 +8,7 @@ const ProductBreadcrumbs = ({ name }) => {
     'Whey Protein',
   ];
   return (
-    <div className='text-sm my-4 mx-12' data-test='product-breadcrumbs'>
+    <div className='text-sm my-4 mx-12' data-testid='product-breadcrumbs'>
       <div className='flex items-center'>
         {productBreadcrumbs.map(item => {
           return (

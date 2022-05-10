@@ -58,7 +58,7 @@ const Purchase = ({ data }) => {
             onClick={e => addToBasketProdPage(e)}
             className='hover:shadow-lg text-xl font-semibold text-white rounded-lg w-11/12 bg-[#93c90e] hover:bg-[#6da500] py-4'
             disabled={!quantity}
-            data-test='add-to-basket-product'
+            data-testid='add-to-basket-product'
           >
             Add to Basket
           </button>
