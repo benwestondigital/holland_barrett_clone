@@ -1,0 +1,98 @@
+[
+    {
+      "id": 0,
+      "name": "PE Nutrition Performance Whey Chocolate 900g",
+      "size": 900,
+      "flavour": "Chocolate",
+      "brand": "PE Nutrition",
+      "price": 1800,
+      "image": "http://localhost:3000/images/PENutritionPerformance900g.webp",
+      "stars": 4.4,
+      "numReviews": 26,
+      "dealType": "Great Savings"
+    },
+    {
+      "id": 1,
+      "name": "PhD Diet Whey Powder Belgian Chocolate 1000g",
+      "size": 1000,
+      "flavour": "Chocolate",
+      "brand": "PhD",
+      "price": 2000,
+      "image": "http://localhost:3000/images/phddietwhey.webp",
+      "stars": 4.3,
+      "numReviews": 300,
+      "dealType": "Great Savings"
+    },
+    {
+      "id": 2,
+      "name": "Optimum Nutrition Serious Mass Powder Strawberry 2.72kg",
+      "size": 2720,
+      "flavour": "Strawberry",
+      "brand": "Optimum Nutrition",
+      "price": 3000,
+      "image": "http://localhost:3000/images/seriousmass.webp",
+      "stars": 4.4,
+      "numReviews": 110,
+      "dealType": "Great Savings"
+    },
+    {
+      "id": 3,
+      "name": "Optimum Nutrition Gold Standard 100% Whey Powder Vanilla Ice Cream 450g",
+      "size": 450,
+      "flavour": "Vanilla Ice Cream",
+      "brand": "Optimum Nutrition",
+      "price": 1600,
+      "image": "http://localhost:3000/images/goldstandardwhey.webp",
+      "stars": 4.7,
+      "numReviews": 358,
+      "dealType": "Great Savings"
+    },
+    {
+      "id": 4,
+      "name": "Applied Nutrition Collagen Peptides 300g",
+      "size": 300,
+      "flavour": "Unflavoured",
+      "brand": "Applied Nutrition",
+      "price": 2500,
+      "image": "http://localhost:3000/images/collagenpeptides.webp",
+      "stars": 3.5,
+      "numReviews": 13,
+      "dealType": "Buy 1 Get 1 Half Price"
+    },
+    {
+      "id": 5,
+      "name": "PE Nutrition Simply Whey Strawberry 600g",
+      "size": 600,
+      "flavour": "Strawberry",
+      "brand": "PE Nutrition",
+      "price": 1500,
+      "image": "http://localhost:3000/images/penutritionwhey.jpg",
+      "stars": 4.4,
+      "numReviews": 26,
+      "dealType": "Great Value"
+    },
+    {
+      "id": 6,
+      "name": "Pulsin Soya Protein 250g Powder",
+      "size": 250,
+      "flavour": "Soya",
+      "brand": "Pulsin",
+      "price": 524,
+      "image": "http://localhost:3000/images/pulsinsoyaprotein.webp",
+      "stars": 4,
+      "numReviews": 46,
+      "dealType": "25% off"
+    },
+    {
+      "id": 7,
+      "name": "Optimum Nutrition Lean Whey Sugar Free Strawberries & Cream 740g",
+      "size": 740,
+      "flavour": "Strawberries & Cream",
+      "brand": "Optimum Nutrition",
+      "price": 1500,
+      "image": "http://localhost:3000/images/optimumnutritionleanwhey.webp",
+      "stars": 5,
+      "numReviews": 4,
+      "dealType": "Great Savings"
+    }
+  ]

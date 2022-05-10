@@ -54,8 +54,7 @@ const ProductPage = ({ product }) => {
 };
 
 export async function getStaticPaths() {
-  const res = await fetch('http://localhost:3000/products');
-  const products = await res.json();
+  const products = require('../../products.json');
 
   return {
     paths: products.map(p => ({
@@ -68,8 +67,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { slug } }) {
-  const res = await fetch('http://localhost:3000/products');
-  const products = await res.json();
+  const products = require('../../products.json');
   const [product] = products.filter(
     product => product.name.replace(' ', '') === slug
   );
