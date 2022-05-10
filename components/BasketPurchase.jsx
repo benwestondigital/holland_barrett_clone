@@ -7,7 +7,7 @@ const totalPrice = basket => {
     displayedPrice = basket.reduce((a, b) => a + b.price, 0);
   }
 
-  return displayedPrice / 100;
+  return (Math.round(displayedPrice) / 100);
 };
 
 const BasketPurchase = ({ basket }) => {
@@ -16,7 +16,7 @@ const BasketPurchase = ({ basket }) => {
       <div className='py-4'>
         <div className='flex items-center justify-between mt-1'>
           <p>Subtotal</p>
-          <p className='font-semibold'>£{totalPrice(basket)}</p>
+          <p className='font-semibold'>£{totalPrice(basket).toFixed(2)}</p>
         </div>
         <div className='flex items-center justify-between mt-1 text-hbred'>
           <p>Savings</p>
