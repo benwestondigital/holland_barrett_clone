@@ -9,6 +9,15 @@ export const pricePer100g = (price, size) => {
   return `£${(price / size).toFixed(2)}/100g`;
 };
 
+export const totalPrice = basket => {
+  let displayedPrice = basket[0].price;
+  if (basket.length > 1) {
+    displayedPrice = basket.reduce((a, b) => a + b.price, 0);
+  }
+
+  return (Math.round(displayedPrice) / 100);
+};
+
 /* Nav */
 export const navCategories = [
   'Vitamins & Supplements',
