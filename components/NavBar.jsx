@@ -10,8 +10,8 @@ import { BasketContext } from '../context/Basket';
 import { useContext } from 'react';
 
 const NavBar = () => {
-  const { basket, setBasket } = useContext(BasketContext);
-  const basketItems = basket.length
+  const { basket } = useContext(BasketContext);
+  const basketItems = basket.length;
 
   return (
     <div className='flex items-center'>
