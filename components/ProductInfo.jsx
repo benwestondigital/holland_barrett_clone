@@ -7,7 +7,7 @@ const ProductInfo = ({ name, brand, numReviews, stars, flavour }) => {
       <div>
         <p className='text-3xl font-bold p-2'>{name}</p>
         <p className='text-sm p-2'>
-          By <span className='text-hbgreen'>{brand}</span>
+          By <span className='text-hbgreen hover:underline cursor-pointer'>{brand}</span>
         </p>
         <div className='p-1'>
           <StarRating stars={stars} numReviews={numReviews} />

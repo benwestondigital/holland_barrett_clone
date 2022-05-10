@@ -2,7 +2,7 @@ import { RefreshIcon } from '@heroicons/react/outline';
 import { useState } from 'react';
 
 const Purchase = () => {
-  const [quantity, setQuantity] = useState(0);
+  const [quantity, setQuantity] = useState(1);
 
   const decreaseQuantity = e => {
     e.preventDefault();
@@ -30,13 +30,13 @@ const Purchase = () => {
           <input
             type='radio'
             id='purchase'
-            className='h-6 w-6 mr-2 checked:text-[#00594c] focus:outline-none'
+            className='h-6 w-6 mr-2 checked:text-[#00594c] focus:outline-none cursor-pointer'
             checked
             readOnly
           />
           <label
             htmlFor='purchase'
-            className='text-xl text-black font-semibold'
+            className='text-xl text-black font-semibold cursor-pointer'
           >
             One-time purchase
           </label>
