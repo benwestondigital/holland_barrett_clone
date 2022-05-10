@@ -16,8 +16,11 @@ const ProductCard = ({ data }) => {
   };
 
   return (
-    <Link href={`products/${productLink}`} data-testid='product-card'>
-      <div className='border flex flex-col cursor-pointer'>
+    <Link href={`products/${productLink}`}>
+      <div
+        className='border flex flex-col cursor-pointer'
+        data-testid='product-card'
+      >
         <div data-testid='product-image'>
           <Image alt={name} src={image} width={302} height={302} />
         </div>
