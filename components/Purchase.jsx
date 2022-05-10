@@ -28,7 +28,6 @@ const Purchase = ({ data }) => {
         data,
       ]);
     }
-    setQuantity(1);
   };
 
   return (
