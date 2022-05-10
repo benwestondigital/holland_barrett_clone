@@ -16,7 +16,13 @@ const ProductPage = ({
         {/* Left Col - Image */}
         {/* TODO: Make image fixed? */}
         <div className='column1'>
-          <Image alt={name} src={image} width={604} height={604} className='cursor-crosshair'/>
+          <Image
+            alt={name}
+            src={image}
+            width={604}
+            height={604}
+            className='cursor-crosshair'
+          />
           <div className='flex items-center justify-between cursor-pointer'>
             <div className='border-b-4 border-gray-500'>
               <Image alt={name} src={image} width={88} height={88} />
@@ -37,11 +43,11 @@ const ProductPage = ({
             flavour={flavour}
           />
           <Price price={price} size={size} />
-          <Purchase />
+          <Purchase name={name} price={price} />
           <StoreAvailability />
         </div>
       </div>
-          <FurtherInfo stars={stars} numReviews={numReviews}/>
+      <FurtherInfo stars={stars} numReviews={numReviews} />
     </div>
   );
 };

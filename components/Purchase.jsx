@@ -1,7 +1,10 @@
 import { RefreshIcon } from '@heroicons/react/outline';
 import { useState } from 'react';
+import { BasketContext } from '../context/Basket';
+import { useContext } from 'react';
 
-const Purchase = () => {
+const Purchase = ({ name, price }) => {
+  const { setBasket } = useContext(BasketContext);
   const [quantity, setQuantity] = useState(1);
 
   const decreaseQuantity = e => {
@@ -16,10 +19,15 @@ const Purchase = () => {
     setQuantity(currQuantity => currQuantity + 1);
   };
 
-  const addToBasket = e => {
+  const addToBasketProdPage = e => {
     e.preventDefault();
-    /* TODO: complete add to basket function - context */
-    setQuantity(0);
+    for (let i = 0; i < quantity; i++) {
+      setBasket(currBasket => [
+        ...currBasket,
+        { name: name, price: price, count: 1 },
+      ]);
+    }
+    setQuantity(1);
   };
 
   return (
@@ -73,7 +81,7 @@ const Purchase = () => {
         <div className='flex items-center grow justify-center mt-8'>
           <button
             type='submit'
-            onClick={e => addToBasket(e)}
+            onClick={e => addToBasketProdPage(e)}
             className='hover:shadow-lg text-xl font-semibold text-white rounded-lg w-11/12 bg-[#93c90e] hover:bg-[#6da500] py-4'
             disabled={!quantity}
           >
