@@ -2,11 +2,19 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { displayPrice, pricePer100g } from '../utils';
 import StarRating from './StarRating';
+import { BasketContext } from '../context/Basket';
+import { useContext } from 'react';
 
 const ProductCard = ({
   data: { name, image, dealType, stars, numReviews, price, size },
 }) => {
+  const { setBasket } = useContext(BasketContext);
   const productLink = name.replace(' ', '');
+
+  const addToBasket = e => {
+    e.preventDefault();
+    setBasket(currBasket => [...currBasket, { name: name, price: price }]);
+  };
 
   return (
     <Link href={`products/${productLink}`}>
@@ -24,7 +32,10 @@ const ProductCard = ({
           <StarRating stars={stars} numReviews={numReviews} />
           <p className='font-bold'>{displayPrice(price)}</p>
           <p className='text-sm text-gray-400'>{pricePer100g(price, size)}</p>
-          <button className='rounded-3xl bg-hbgreen hover:bg-[#00322B] hover:drop-shadow-md text-white py-2 px-8 font-semibold text-sm my-4 w-11/12'>
+          <button
+            onClick={e => addToBasket(e)}
+            className='rounded-3xl bg-hbgreen hover:bg-[#00322B] hover:drop-shadow-md text-white py-2 px-8 font-semibold text-sm my-4 w-11/12'
+          >
             Add to Basket
           </button>
         </div>
