@@ -2,7 +2,10 @@ import { navCategories } from '../utils';
 
 const NavCategories = () => {
   return (
-    <div className='md:flex items-center justify-between mt-2 hidden'>
+    <div
+      className='md:flex items-center justify-between mt-2 hidden'
+      data-test='nav-categories'
+    >
       {navCategories.map(type => {
         return (
           <div key={type} className='p-2 hover:bg-white group'>

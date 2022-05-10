@@ -7,21 +7,31 @@ const BasketPurchase = ({ basket }) => {
       <div className='py-4'>
         <div className='flex items-center justify-between mt-1'>
           <p>Subtotal</p>
-          <p className='font-semibold'>£{totalPrice(basket).toFixed(2)}</p>
+          <p className='font-semibold' data-test='subtotal-price'>
+            £{totalPrice(basket).toFixed(2)}
+          </p>
         </div>
-        <div className='flex items-center justify-between mt-1 text-hbred'>
+        <div
+          className='flex items-center justify-between mt-1 text-hbred'
+          data-test='basket-savings'
+        >
           <p>Savings</p>
           <p className='font-semibold'>£0.00</p>
         </div>
         <div className='flex items-center justify-between mt-1'>
           <p>Default Delivery</p>
-          <p className='font-semibold'>£3.49</p>
+          <p className='font-semibold' data-test='delivery-price'>
+            £3.49
+          </p>
         </div>
         <p className='text-[#333] text-sm mt-1'>
           You can change delivery at checkout
         </p>
       </div>
-      <div className='flex items-center justify-between my-2 pb-2 border-b cursor-pointer'>
+      <div
+        className='flex items-center justify-between my-2 pb-2 border-b cursor-pointer'
+        data-test='voucher-code-section'
+      >
         <h3 className='font-semibold'>Add voucher code</h3>
         <ChevronDownIcon className='h-6 text-hbgreen' />
       </div>
@@ -30,16 +40,16 @@ const BasketPurchase = ({ basket }) => {
           <h3 className='font-semibold'>Rewards for Life</h3>
           <ChevronDownIcon className='h-6 text-hbgreen' />
         </div>
-        <p className='text-sm text-[#333] mt-1'>
+        <p className='text-sm text-[#333] mt-1' data-test='reward-points'>
           You could collect <span className='text-hbred'>72</span> points on
           this order
         </p>
       </div>
       <div className='flex items-center justify-between my-2 pb-2'>
-        <h3 className='font-semibold'>
+        <h3 className='font-semibold' data-test='basket-items-number'>
           Total ({basket.length} {basket.length > 1 ? 'items' : 'item'})
         </h3>
-        <p className='font-semibold'>
+        <p className='font-semibold' data-test='total-basket-price'>
           £{(totalPrice(basket) + 3.49).toFixed(2)}
         </p>
       </div>
@@ -48,6 +58,7 @@ const BasketPurchase = ({ basket }) => {
           type='submit'
           className='hover:shadow-lg text-xl font-semibold text-white rounded-lg w-11/12 bg-[#93c90e] hover:bg-[#6da500] py-4 cursor-pointer'
           disabled
+          data-test='checkout-button'
         >
           Checkout
         </button>

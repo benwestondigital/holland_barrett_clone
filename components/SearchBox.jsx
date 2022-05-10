@@ -3,7 +3,10 @@ import { SearchIcon } from '@heroicons/react/outline';
 const SearchBox = () => {
   return (
     <div className='hidden md:flex'>
-      <form className='flex grow items-center text-hbgreen max-w-sm'>
+      <form
+        className='flex grow items-center text-hbgreen max-w-sm'
+        data-test='search-form'
+      >
         <input
           type='search'
           placeholder='Search products, brands, articles'

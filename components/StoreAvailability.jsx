@@ -2,7 +2,7 @@ import { SearchIcon } from '@heroicons/react/outline';
 
 const StoreAvailability = () => {
   return (
-    <div className='border-y pb-10 my-2 mb-8'>
+    <div className='border-y pb-10 my-2 mb-8' data-test='store-availability'>
       <h3 className='text-lg font-bold py-4'>Store availability</h3>
       <div className='flex items-center justify-between'>
         <input

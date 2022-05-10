@@ -5,11 +5,19 @@ const ProductInfo = ({ name, brand, numReviews, stars, flavour }) => {
   return (
     <div>
       <div>
-        <p className='text-3xl font-bold p-2'>{name}</p>
-        <p className='text-sm p-2'>
-          By <span className='text-hbgreen hover:underline cursor-pointer'>{brand}</span>
+        <p className='text-3xl font-bold p-2' data-test='product-name'>
+          {name}
         </p>
-        <div className='p-1'>
+        <p className='text-sm p-2'>
+          By{' '}
+          <span
+            className='text-hbgreen hover:underline cursor-pointer'
+            data-test='product-brand'
+          >
+            {brand}
+          </span>
+        </p>
+        <div className='p-1' data-test='product-stars'>
           <StarRating stars={stars} numReviews={numReviews} />
         </div>
       </div>
@@ -24,7 +32,7 @@ const ProductInfo = ({ name, brand, numReviews, stars, flavour }) => {
       </div>
 
       {/* Select Flavour */}
-      <div className='p-2'>
+      <div className='p-2' data-test='product-flavour'>
         <h3 className='text-xl font-semibold mb-3'>
           Select Strength, Flavour or Colour:
         </h3>

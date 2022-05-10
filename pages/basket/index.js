@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import { BasketContext } from '../../context/Basket';
 import EmptyBasket from '../../components/EmptyBasket';
 import Collection from '../../components/Collection';
@@ -25,11 +25,11 @@ const Basket = () => {
 
   if (basket.length < 1) return <EmptyBasket />;
   return (
-    <div className='bg-[#eeeeef] p-6'>
+    <div className='bg-[#eeeeef] p-6' data-test='filled-basket'>
       <div className='p-2 container'>
         <h2 className='font-semibold text-3xl pt-12 pl-12'>Your basket</h2>
         <div className='grid grid-cols-4 gap-x-6 mt-6'>
-          <div className='col-span-3'>
+          <div className='col-span-3' data-test='basket'>
             <div className='bg-white'>
               {uniqueBasket.map((item, index) => {
                 const itemValue = item.price * item.quantity;
@@ -45,7 +45,10 @@ const Basket = () => {
                     </div>
                     <div className='flex items-start justify-between py-4 pl-8 my-2 w-full'>
                       <div className='w-1/2'>
-                        <h3 className='text-[#00594c] font-semibold'>
+                        <h3
+                          className='text-[#00594c] font-semibold'
+                          data-test='product-name'
+                        >
                           {item.name}
                         </h3>
                         <p className='text-hbred mt-4'>Great Value</p>
@@ -53,15 +56,22 @@ const Basket = () => {
                       <div className='flex items-start justify-between ml-8 w-64'>
                         <div>
                           <div className='border-2 rounded-lg px-4 w-24 py-1 flex items-center justify-between'>
-                            <span className='text-2xl text-hbgreen'>-</span>
-                            <span className=''>{item.quantity}</span>
-                            <span className='text-2xl text-hbgreen'>+</span>
+                            <span className='text-2xl text-hbgreen cursor-pointer'>
+                              -
+                            </span>
+                            <span>{item.quantity}</span>
+                            <span className='text-2xl text-hbgreen cursor-pointer'>
+                              +
+                            </span>
                           </div>
                           <p className='text-hbgreen underline text-xs cursor-pointer mt-2'>
                             Save for later
                           </p>
                         </div>
-                        <p className='font-semibold text-xl'>
+                        <p
+                          className='font-semibold text-xl'
+                          data-test='product-price'
+                        >
                           {displayPrice(itemValue)}
                         </p>
                       </div>
@@ -72,7 +82,7 @@ const Basket = () => {
             </div>
           </div>
           {/* Sidebar */}
-          <div className='col-span-1'>
+          <div className='col-span-1' data-test='basket-sidebar'>
             <Collection />
             {/* Purchase Amount */}
             <BasketPurchase basket={basket} />

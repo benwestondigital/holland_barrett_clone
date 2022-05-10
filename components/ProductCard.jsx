@@ -16,7 +16,7 @@ const ProductCard = ({ data }) => {
   };
 
   return (
-    <Link href={`products/${productLink}`}>
+    <Link href={`products/${productLink}`} data-test='product-card'>
       <div className='border flex flex-col cursor-pointer'>
         <div data-test='product-image'>
           <Image alt={name} src={image} width={302} height={302} />
@@ -34,6 +34,7 @@ const ProductCard = ({ data }) => {
           <button
             onClick={e => addToBasket(e)}
             className='rounded-3xl bg-hbgreen hover:bg-[#00322B] hover:drop-shadow-md text-white py-2 px-8 font-semibold text-sm my-4 w-11/12'
+            data-test='add-to-basket-home'
           >
             Add to Basket
           </button>

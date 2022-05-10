@@ -2,7 +2,10 @@ import { SearchIcon } from '@heroicons/react/outline';
 
 const Collection = () => {
   return (
-    <div className='bg-white p-4 flex flex-col justify-start items-start'>
+    <div
+      className='bg-white p-4 flex flex-col justify-start items-start'
+      data-test='basket-collection'
+    >
       <h3 className='font-semibold text-lg whitespace-nowrap'>
         Collection availability
       </h3>

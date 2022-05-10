@@ -15,8 +15,12 @@ const Price = ({ price, size }) => {
           </p>
         </div>
         <div>
-          <p className='text-2xl font-bold'>{displayPrice(price)}</p>
-          <p className='text-sm text-gray-400'>{pricePer100g(price, size)}</p>
+          <p className='text-2xl font-bold' data-test='product-page-price'>
+            {displayPrice(price)}
+          </p>
+          <p className='text-sm text-gray-400' data-test='product-page-100g'>
+            {pricePer100g(price, size)}
+          </p>
         </div>
       </div>
       <p className='text-xs text-gray-400 ml-1'>SKU: 046032</p>

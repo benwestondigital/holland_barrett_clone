@@ -22,7 +22,11 @@ const FurtherInfo = ({ stars, numReviews }) => {
             <div>
               <p className='text-xl font-semibold mb-1'>{info}</p>
               {renderStars && (
-                <StarRating stars={stars} numReviews={numReviews} />
+                <StarRating
+                  stars={stars}
+                  numReviews={numReviews}
+                  data-test='product-customer-stars'
+                />
               )}
             </div>
             <ChevronDownIcon className='h-7' />

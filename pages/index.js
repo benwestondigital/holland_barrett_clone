@@ -15,21 +15,29 @@ const Home = ({ products }) => {
       </Head>
 
       {/* Breadcrumbs */}
-      <div className='text-sm my-4 mx-12'>
-        <p>
-          <span className='text-hbgreen mr-4 hover:underline cursor-pointer'>
-            Home
-          </span>{' '}
-          <span className='text-xl mr-2'>{'>'}</span> Protein Powder for £30 or
-          Less
-        </p>
-      </div>
-      <div className='flex justify-center text-4xl font-semibold'>
-        <h1>Protein Powder for £30 or Less</h1>
+      <div data-test='home-breadcrumbs'>
+        <div className='text-sm my-4 mx-12'>
+          <p>
+            <span className='text-hbgreen mr-4 hover:underline cursor-pointer'>
+              Home
+            </span>{' '}
+            <span className='text-xl mr-2'>{'>'}</span> Protein Powder for £30
+            or Less
+          </p>
+        </div>
+        <div
+          className='flex justify-center text-4xl font-semibold'
+          data-test='home-title'
+        >
+          <h1>Protein Powder for £30 or Less</h1>
+        </div>
       </div>
 
       {/* Content */}
-      <div className='grid grid-cols-1 md:grid-cols-5 gap-2 m-8'>
+      <div
+        className='grid grid-cols-1 md:grid-cols-5 gap-2 m-8'
+        data-test='home-main-content'
+      >
         <Sidebar />
         <Products products={products} />
       </div>

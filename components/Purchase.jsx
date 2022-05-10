@@ -23,10 +23,7 @@ const Purchase = ({ data }) => {
   const addToBasketProdPage = e => {
     e.preventDefault();
     for (let i = 0; i < quantity; i++) {
-      setBasket(currBasket => [
-        ...currBasket,
-        data,
-      ]);
+      setBasket(currBasket => [...currBasket, data]);
     }
   };
 
@@ -61,6 +58,7 @@ const Purchase = ({ data }) => {
             onClick={e => addToBasketProdPage(e)}
             className='hover:shadow-lg text-xl font-semibold text-white rounded-lg w-11/12 bg-[#93c90e] hover:bg-[#6da500] py-4'
             disabled={!quantity}
+            data-test='add-to-basket-product'
           >
             Add to Basket
           </button>
