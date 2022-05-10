@@ -11,7 +11,7 @@ const StoreAvailability = () => {
           className='w-full border-r-0 focus:outline-none'
         />
         <div className='border-y border-r p-2 border-[#6B7280]'>
-          <SearchIcon className='h-6' />
+          <SearchIcon className='h-6 cursor-pointer' />
         </div>
       </div>
     </div>
