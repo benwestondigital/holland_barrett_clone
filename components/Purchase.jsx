@@ -98,12 +98,12 @@ const Purchase = () => {
           Get these benefits from your second order onwards:
         </p>
         <ul className='mt-3 list-disc px-6'>
-          <li>
+          <li className='pb-2'>
             Pay as little as{' '}
             <span className='text-hbgreen font-semibold text-lg'>£14.25</span>!
           </li>
-          <li>Every 5th order free</li>
-          <li>Free delivery</li>
+          <li className='pb-2'>Every 5th order free</li>
+          <li className='pb-2'>Free delivery</li>
         </ul>
         <p className='text-hbgreen underline px-2 py-4 cursor-pointer'>
           More Info
