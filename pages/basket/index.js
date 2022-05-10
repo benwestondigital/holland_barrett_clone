@@ -44,16 +44,23 @@ const Basket = () => {
                       />
                     </div>
                     <div className='flex items-start justify-between py-4 pl-8 my-2 w-full'>
-                      <div>
+                      <div className='w-1/2'>
                         <h3 className='text-[#00594c] font-semibold'>
                           {item.name}
                         </h3>
                         <p className='text-hbred mt-4'>Great Value</p>
                       </div>
-                      <div className='flex items-center justify-between ml-8 w-64'>
-                        <span className='border-2 rounded-lg px-8 py-1'>
-                          {item.quantity}
-                        </span>
+                      <div className='flex items-start justify-between ml-8 w-64'>
+                        <div>
+                          <div className='border-2 rounded-lg px-4 w-24 py-1 flex items-center justify-between'>
+                            <span className='text-2xl text-hbgreen'>-</span>
+                            <span className=''>{item.quantity}</span>
+                            <span className='text-2xl text-hbgreen'>+</span>
+                          </div>
+                          <p className='text-hbgreen underline text-xs cursor-pointer mt-2'>
+                            Save for later
+                          </p>
+                        </div>
                         <p className='font-semibold text-xl'>
                           {displayPrice(itemValue)}
                         </p>
