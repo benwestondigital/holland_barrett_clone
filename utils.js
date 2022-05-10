@@ -1,6 +1,6 @@
 export const displayPrice = price => {
   if (price > 999) {
-    return `£${price / 100}.00`;
+    return `£${(price / 100).toFixed(2)}`;
   }
   return `£${price / 100}`;
 };
@@ -15,7 +15,7 @@ export const totalPrice = basket => {
     displayedPrice = basket.reduce((a, b) => a + b.price, 0);
   }
 
-  return (Math.round(displayedPrice) / 100);
+  return Math.round(displayedPrice) / 100;
 };
 
 /* Nav */
