@@ -5,15 +5,14 @@ import StarRating from './StarRating';
 import { BasketContext } from '../context/Basket';
 import { useContext } from 'react';
 
-const ProductCard = ({
-  data: { name, image, dealType, stars, numReviews, price, size },
-}) => {
+const ProductCard = ({ data }) => {
+  const { name, image, dealType, stars, numReviews, price, size } = data;
   const { setBasket } = useContext(BasketContext);
   const productLink = name.replace(' ', '');
 
   const addToBasket = e => {
     e.preventDefault();
-    setBasket(currBasket => [...currBasket, { name: name, price: price }]);
+    setBasket(currBasket => [...currBasket, data]);
   };
 
   return (

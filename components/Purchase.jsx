@@ -2,8 +2,9 @@ import { RefreshIcon } from '@heroicons/react/outline';
 import { useState } from 'react';
 import { BasketContext } from '../context/Basket';
 import { useContext } from 'react';
+import QuantityButton from './QuantityButton';
 
-const Purchase = ({ name, price }) => {
+const Purchase = ({ data }) => {
   const { setBasket } = useContext(BasketContext);
   const [quantity, setQuantity] = useState(1);
 
@@ -24,7 +25,7 @@ const Purchase = ({ name, price }) => {
     for (let i = 0; i < quantity; i++) {
       setBasket(currBasket => [
         ...currBasket,
-        { name: name, price: price, count: 1 },
+        data,
       ]);
     }
     setQuantity(1);
@@ -49,35 +50,12 @@ const Purchase = ({ name, price }) => {
             One-time purchase
           </label>
         </div>
-        <div className='m-2 grid grid-cols-2 gap-x-1 pt-2'>
-          <label
-            htmlFor='quantity'
-            className='text-xl font-semibold text-black'
-          >
-            Quantity:
-          </label>
-          <div className='border rounded-lg w-11/12 flex items-center justify-between bg-white px-2'>
-            <button
-              className='text-lg h-8 text-hbgreen'
-              onClick={e => decreaseQuantity(e)}
-            >
-              -
-            </button>
-            <input
-              type='number'
-              id='quantity'
-              className='w-14 h-8 no-spin border-0 text-center'
-              value={quantity}
-              readOnly
-            />
-            <button
-              className='text-lg h-8 text-hbgreen'
-              onClick={e => increaseQuantity(e)}
-            >
-              +
-            </button>
-          </div>
-        </div>
+        {/* Quantity Button */}
+        <QuantityButton
+          decreaseQuantity={decreaseQuantity}
+          increaseQuantity={increaseQuantity}
+          quantity={quantity}
+        />
         <div className='flex items-center grow justify-center mt-8'>
           <button
             type='submit'

@@ -6,9 +6,10 @@ import Purchase from '../../components/Purchase';
 import StoreAvailability from '../../components/StoreAvailability';
 import FurtherInfo from '../../components/FurtherInfo';
 
-const ProductPage = ({
-  product: { name, image, flavour, brand, price, numReviews, stars, size },
-}) => {
+const ProductPage = ({ product }) => {
+  const { name, image, flavour, brand, price, numReviews, stars, size } =
+    product;
+
   return (
     <div className='text-[#333] container'>
       <ProductBreadcrumbs name={name} />
@@ -43,7 +44,7 @@ const ProductPage = ({
             flavour={flavour}
           />
           <Price price={price} size={size} />
-          <Purchase name={name} price={price} />
+          <Purchase data={product} />
           <StoreAvailability />
         </div>
       </div>
