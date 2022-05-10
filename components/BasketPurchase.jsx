@@ -1,14 +1,5 @@
 import { ChevronDownIcon } from '@heroicons/react/outline';
-import { displayPrice } from '../utils';
-
-const totalPrice = basket => {
-  let displayedPrice = basket[0].price;
-  if (basket.length > 1) {
-    displayedPrice = basket.reduce((a, b) => a + b.price, 0);
-  }
-
-  return (Math.round(displayedPrice) / 100);
-};
+import { displayPrice, totalPrice } from '../utils';
 
 const BasketPurchase = ({ basket }) => {
   return (
@@ -30,12 +21,12 @@ const BasketPurchase = ({ basket }) => {
           You can change delivery at checkout
         </p>
       </div>
-      <div className='flex items-center justify-between my-2 pb-2 border-b'>
+      <div className='flex items-center justify-between my-2 pb-2 border-b cursor-pointer'>
         <h3 className='font-semibold'>Add voucher code</h3>
         <ChevronDownIcon className='h-6 text-hbgreen' />
       </div>
       <div className='flex flex-col my-2 pb-2 border-b'>
-        <div className='flex items-center justify-between'>
+        <div className='flex items-center justify-between cursor-pointer'>
           <h3 className='font-semibold'>Rewards for Life</h3>
           <ChevronDownIcon className='h-6 text-hbgreen' />
         </div>
@@ -48,12 +39,14 @@ const BasketPurchase = ({ basket }) => {
         <h3 className='font-semibold'>
           Total ({basket.length} {basket.length > 1 ? 'items' : 'item'})
         </h3>
-        <p className='font-semibold'>£{totalPrice(basket) + 3.49}</p>
+        <p className='font-semibold'>
+          £{(totalPrice(basket) + 3.49).toFixed(2)}
+        </p>
       </div>
       <div className='flex items-center grow justify-center mt-2'>
         <button
           type='submit'
-          className='hover:shadow-lg text-xl font-semibold text-white rounded-lg w-11/12 bg-[#93c90e] hover:bg-[#6da500] py-4'
+          className='hover:shadow-lg text-xl font-semibold text-white rounded-lg w-11/12 bg-[#93c90e] hover:bg-[#6da500] py-4 cursor-pointer'
           disabled
         >
           Checkout
