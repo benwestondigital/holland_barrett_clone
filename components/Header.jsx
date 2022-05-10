@@ -14,7 +14,7 @@ const Header = () => {
         </div>
         <NavCategories />
       </div>
-      <div className='md:h-12 bg-hbred flex flex-col md:flex-row items-center justify-between hover:bg-hblightred h-20'>
+      <div className='md:h-12 bg-hbred flex flex-col md:flex-row items-center justify-between hover:bg-hblightred h-20 cursor-pointer'>
         <div className='w-10/12 flex flex-col md:flex-row items-center justify-center'>
           <p className='font-semibold text-sm md:text-lg pt-2 md:pt-0 md:pl-64'>
             Buy 1 get 1 half price | On 100s of your favourites {'>'}
