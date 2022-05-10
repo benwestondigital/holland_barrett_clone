@@ -11,7 +11,7 @@ const Sidebar = () => {
         <ul className='text-sm text-hbgreen px-4 py-3'>
           {categories.map(cat => {
             return (
-              <li key={cat} className='cursor-pointer hover:underline'>
+              <li key={cat} className='cursor-pointer hover:underline mt-1'>
                 {cat}
               </li>
             );
