@@ -59,15 +59,6 @@ describe('Home Page - /', () => {
 
 
 /* 
-  // When click add to basket it should increment the nav button
-  Run through journey of buying item
-  // Add item to basket
-  Buying item in different places - home and product page
   Same on mobile
   Certain elements hidden on mobile
-  Look at cypress example tests
-  // Check basic elements exist on each page
-  // increment up and down quantity buttons
-  check price is correct when adding item
-  // Prices contain 2 decimal places
 */
