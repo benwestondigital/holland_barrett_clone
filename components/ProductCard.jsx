@@ -32,7 +32,9 @@ const ProductCard = ({ data }) => {
             {name}
           </p>
           <StarRating stars={stars} numReviews={numReviews} />
-          <p className='font-bold'>{displayPrice(price)}</p>
+          <p className='font-bold' data-testid='home-product-price'>
+            {displayPrice(price)}
+          </p>
           <p className='text-sm text-gray-400'>{pricePer100g(price, size)}</p>
           <button
             onClick={e => addToBasket(e)}
