@@ -59,7 +59,7 @@ const Basket = () => {
                             <span className='text-2xl text-hbgreen cursor-pointer'>
                               -
                             </span>
-                            <span>{item.quantity}</span>
+                            <span data-testid='basket-item-quantity'>{item.quantity}</span>
                             <span className='text-2xl text-hbgreen cursor-pointer'>
                               +
                             </span>
@@ -70,7 +70,7 @@ const Basket = () => {
                         </div>
                         <p
                           className='font-semibold text-xl'
-                          data-testid='product-price'
+                          data-testid='basket-product-price'
                         >
                           {displayPrice(itemValue)}
                         </p>

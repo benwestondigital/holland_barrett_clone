@@ -23,6 +23,7 @@ const ProductPage = ({ product }) => {
             width={604}
             height={604}
             className='cursor-crosshair'
+            data-testid='product-page-image'
           />
           <div className='flex items-center justify-between cursor-pointer'>
             <div className='border-b-4 border-gray-500'>
