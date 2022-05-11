@@ -15,7 +15,6 @@ const ProductPage = ({ product }) => {
       <ProductBreadcrumbs name={name} />
       <div className='grid grid-cols-2 gap-2 m-8'>
         {/* Left Col - Image */}
-        {/* TODO: Make image fixed? */}
         <div className='column1'>
           <Image
             alt={name}
