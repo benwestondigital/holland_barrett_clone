@@ -1,5 +1,5 @@
 import { ChevronDownIcon } from '@heroicons/react/outline';
-import { displayPrice, totalPrice } from '../utils';
+import { totalPrice } from '../utils';
 
 const BasketPurchase = ({ basket }) => {
   return (
