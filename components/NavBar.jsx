@@ -21,9 +21,13 @@ const NavBar = () => {
       <NavIcon Icon={GiftIcon} text='Rewards' />
       <NavIcon Icon={HeartIcon} text='Favourites' />
 
-      <Link href='/basket' data-testid='basket-link'>
+      <Link href='/basket'>
         <div className='group text-white flex h-12 w-12 flex-col mx-2 cursor-pointer items-center relative'>
-          <BsBasket3 size={20} className='h-6 mx-auto ' />
+          <BsBasket3
+            size={20}
+            className='h-6 mx-auto'
+            data-testid='basket-link'
+          />
           <p className='group-hover:underline text-xs font-semibold'>Basket</p>
           {basketItems > 0 && (
             <div className='absolute top-0 left-6 bg-hbred h-4 w-4 rounded-full'>

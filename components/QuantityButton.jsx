@@ -18,6 +18,7 @@ const QuantityButton = ({ decreaseQuantity, increaseQuantity, quantity }) => {
           className='w-14 h-8 no-spin border-0 text-center'
           value={quantity}
           readOnly
+          data-testid='product-quantity'
         />
         <button
           className='text-lg h-8 text-hbgreen'

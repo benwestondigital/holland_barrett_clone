@@ -7,7 +7,7 @@ const BasketPurchase = ({ basket }) => {
       <div className='py-4'>
         <div className='flex items-center justify-between mt-1'>
           <p>Subtotal</p>
-          <p className='font-semibold' data-testid='subtotal-price'>
+          <p className='font-semibold' data-testid='basket-subtotal-price'>
             £{totalPrice(basket).toFixed(2)}
           </p>
         </div>
@@ -49,7 +49,7 @@ const BasketPurchase = ({ basket }) => {
         <h3 className='font-semibold' data-testid='basket-items-number'>
           Total ({basket.length} {basket.length > 1 ? 'items' : 'item'})
         </h3>
-        <p className='font-semibold' data-testid='total-basket-price'>
+        <p className='font-semibold' data-testid='basket-total-price'>
           £{(totalPrice(basket) + 3.49).toFixed(2)}
         </p>
       </div>
