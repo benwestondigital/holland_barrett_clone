@@ -67,4 +67,35 @@ describe('Basket Page - /basket', () => {
     cy.get('[data-testid=basket-subtotal-price]').should('have.text', '£33.00');
     cy.get('[data-testid=basket-total-price]').should('have.text', '£36.49');
   });
+  it('adds multiple different products to basket', () => {
+    cy.get('[data-testid=product-card]').first().click();
+    cy.get('[data-testid=increase-button]').click();
+    cy.get('[data-testid=increase-button]').click();
+    cy.get('[data-testid=add-to-basket-product]').click();
+    cy.get('[data-testid=logo]').click();
+    cy.get('[data-testid=product-card]').last().click();
+    cy.get('[data-testid=increase-button]').click();
+    cy.get('[data-testid=increase-button]').click();
+    cy.get('[data-testid=add-to-basket-product]').click();
+    cy.get('[data-testid=basket-link]').click();
+    cy.get('[data-testid=product-name]')
+      .first()
+      .should('have.text', 'PE Nutrition Performance Whey Chocolate 900g');
+    cy.get('[data-testid=product-name]')
+      .last()
+      .should(
+        'have.text',
+        'Optimum Nutrition Lean Whey Sugar Free Strawberries & Cream 740g'
+      );
+    cy.get('[data-testid=basket-item-quantity]').first().should('have.text', 3);
+    cy.get('[data-testid=basket-product-price]')
+      .first()
+      .should('have.text', '£54.00');
+    cy.get('[data-testid=basket-item-quantity]').last().should('have.text', 3);
+    cy.get('[data-testid=basket-product-price]')
+      .last()
+      .should('have.text', '£45.00');
+    cy.get('[data-testid=basket-subtotal-price]').should('have.text', '£99.00');
+    cy.get('[data-testid=basket-total-price]').should('have.text', '£102.49');
+  });
 });
