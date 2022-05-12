@@ -18,6 +18,18 @@
 
 This Holland & Barret clone site was built to display my Cypress testing and Front-end development skills.
 
+- Three pages - products, individual product page, basket
+
+- Small selection of products taken from the website
+
+- Set up testing attributes for Cypress with [data-testid=*] tags
+
+- With the small scope of the project, I wanted the main feature to be adding items to the basket
+- Most other features/links are cosmetic
+- No backend - data does not persist with page refresh
+
+
+
 ## To Run
 
 - Download into local folder
