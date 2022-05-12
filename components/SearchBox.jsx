@@ -15,7 +15,6 @@ const SearchBox = () => {
           maxLength={128}
           className='p-2 rounded-l-md placeholder-hbgreen outline-none border-0 grow'
         />
-        {/* TODO: set up button useState to enable when typed */}
         <button type='submit' disabled className='bg-white p-2 rounded-r-md'>
           <SearchIcon className='w-6 h-6' />
         </button>

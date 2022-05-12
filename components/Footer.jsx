@@ -3,7 +3,6 @@ const Footer = () => {
   return (
     <div className='border-t-4 border-hbgreen' data-testid='footer'>
       <div className='container hidden md:flex items-start justify-between px-12 mb-12 pt-8'>
-        {/* Payment / Social Links Section */}
         {/* Site Links Section */}
         <div>
           <h3 className='font-bold mb-2'>Customer Service</h3>
