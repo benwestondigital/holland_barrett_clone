@@ -20,13 +20,13 @@ This Holland & Barret clone site was built to display my Cypress testing and Fro
 
 ## To Run
 
-Download into local folder
+- Download into local folder
 
-Install dependencies with `npm install`
+- Install dependencies with `npm install`
 
-Start project with `npm run dev`
+- Start project with `npm run dev`
 
-Open cypress with `npx cypress open`
+- Open cypress with `npx cypress open`
 
-Run tests in cypress using the GUI
+- Run tests in cypress using the GUI
 
