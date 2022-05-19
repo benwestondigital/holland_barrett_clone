@@ -4,6 +4,8 @@
 ![tailwindcss](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![cypress](https://img.shields.io/badge/Cypress-17202C?style=for-the-badge&logo=cypress&logoColor=white)
 
+# Live Link [Here](https://holland-barrett-clone.vercel.app)
+
 ## Built by Ben Weston [Github](https://github.com/benwestondigital)
 
 ## Technology Used
@@ -27,6 +29,7 @@ This Holland & Barret clone site was built to display my Cypress testing and Fro
 - With the small scope of the project, I wanted the main feature to be adding items to the basket
 - Most other features/links are cosmetic
 - No backend - data does not persist with page refresh
+- This is a desktop project - not built for mobile/tablet screens
 
 
 
