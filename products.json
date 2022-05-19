@@ -6,7 +6,7 @@
       "flavour": "Chocolate",
       "brand": "PE Nutrition",
       "price": 1800,
-      "image": "http://localhost:3000/images/PENutritionPerformance900g.webp",
+      "image": "/images/PENutritionPerformance900g.webp",
       "stars": 4.4,
       "numReviews": 26,
       "dealType": "Great Savings"
@@ -18,7 +18,7 @@
       "flavour": "Chocolate",
       "brand": "PhD",
       "price": 2000,
-      "image": "http://localhost:3000/images/phddietwhey.webp",
+      "image": "/images/phddietwhey.webp",
       "stars": 4.3,
       "numReviews": 300,
       "dealType": "Great Savings"
@@ -30,7 +30,7 @@
       "flavour": "Strawberry",
       "brand": "Optimum Nutrition",
       "price": 3000,
-      "image": "http://localhost:3000/images/seriousmass.webp",
+      "image": "/images/seriousmass.webp",
       "stars": 4.4,
       "numReviews": 110,
       "dealType": "Great Savings"
@@ -42,7 +42,7 @@
       "flavour": "Vanilla Ice Cream",
       "brand": "Optimum Nutrition",
       "price": 1600,
-      "image": "http://localhost:3000/images/goldstandardwhey.webp",
+      "image": "/images/goldstandardwhey.webp",
       "stars": 4.7,
       "numReviews": 358,
       "dealType": "Great Savings"
@@ -54,7 +54,7 @@
       "flavour": "Unflavoured",
       "brand": "Applied Nutrition",
       "price": 2500,
-      "image": "http://localhost:3000/images/collagenpeptides.webp",
+      "image": "/images/collagenpeptides.webp",
       "stars": 3.5,
       "numReviews": 13,
       "dealType": "Buy 1 Get 1 Half Price"
@@ -66,7 +66,7 @@
       "flavour": "Strawberry",
       "brand": "PE Nutrition",
       "price": 1500,
-      "image": "http://localhost:3000/images/penutritionwhey.jpg",
+      "image": "/images/penutritionwhey.jpg",
       "stars": 4.4,
       "numReviews": 26,
       "dealType": "Great Value"
@@ -78,7 +78,7 @@
       "flavour": "Soya",
       "brand": "Pulsin",
       "price": 524,
-      "image": "http://localhost:3000/images/pulsinsoyaprotein.webp",
+      "image": "/images/pulsinsoyaprotein.webp",
       "stars": 4,
       "numReviews": 46,
       "dealType": "25% off"
@@ -90,7 +90,7 @@
       "flavour": "Strawberries & Cream",
       "brand": "Optimum Nutrition",
       "price": 1500,
-      "image": "http://localhost:3000/images/optimumnutritionleanwhey.webp",
+      "image": "/images/optimumnutritionleanwhey.webp",
       "stars": 5,
       "numReviews": 4,
       "dealType": "Great Savings"
