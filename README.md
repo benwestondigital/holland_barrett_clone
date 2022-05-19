@@ -4,7 +4,7 @@
 ![tailwindcss](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![cypress](https://img.shields.io/badge/Cypress-17202C?style=for-the-badge&logo=cypress&logoColor=white)
 
-# Live Link [Here](https://holland-barrett-clone.vercel.app)
+# [Live Link](https://holland-barrett-clone.vercel.app)
 
 ## Built by Ben Weston [Github](https://github.com/benwestondigital)
 
